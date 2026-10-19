@@ -392,11 +392,11 @@ class CalculatorEngine(var angleMode: AngleMode = AngleMode.DEG) {
         var zz = z - 1.0
         for (i in 1 until c.size) x += c[i] / (zz + i)
         val t = zz + g + 0.5
-        return sqrt(2 * PI) * kotlin.math.pow(t, zz + 0.5) * exp(-t) * x
+        return sqrt(2 * PI) * Math.pow(t, zz + 0.5) * exp(-t) * x
     }
 
-    private fun gcd(a: Long, b: Long): Long = if (b == 0L) kotlin.math.abs(a) else gcd(b, a % b)
-    private fun lcm(a: Long, b: Long): Long = if (a == 0L || b == 0L) 0 else kotlin.math.abs(a * b) / gcd(a, b)
+    private fun gcd(a: Long, b: Long): Long = if (b == 0L) Math.abs(a) else gcd(b, a % b)
+    private fun lcm(a: Long, b: Long): Long = if (a == 0L || b == 0L) 0 else Math.abs(a * b) / gcd(a, b)
 
     /** Format the result for display: integers without decimals, others with up to 10 significant digits. */
     fun formatResult(value: Double): String {
