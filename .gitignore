@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# App modules
+/app/build
+/app/release
+/app/.cxx
+
+# Keystore — NEVER commit signing keys
+*.keystore
+*.jks
+!debug.keystore
+
+# Local config files
+local.properties
+signing.properties
+
+# Logs
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# K8s/build cache
+.kotlin/

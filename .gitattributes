@@ -1,0 +1,22 @@
+# Project-wide Git configuration
+* text=auto
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.pdf binary
+*.apk binary
+*.aab binary
+*.keystore binary
+*.jks binary
+*.jar binary

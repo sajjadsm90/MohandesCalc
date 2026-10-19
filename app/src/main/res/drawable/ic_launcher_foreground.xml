@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive launcher icon - foreground: orange calculator glyph on transparent -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Calculator body -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M30,18 L78,18 C82.42,18 86,21.58 86,26 L86,82 C86,86.42 82.42,90 78,90 L30,90 C25.58,90 22,86.42 22,82 L22,26 C22,21.58 25.58,18 30,18 Z" />
+    <!-- Screen -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,28 L74,28 L74,42 L34,42 Z" />
+    <!-- Buttons grid -->
+    <path android:fillColor="#FFFFFF" android:pathData="M34,50 L42,50 L42,58 L34,58 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M48,50 L56,50 L56,58 L48,58 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M62,50 L70,50 L70,58 L62,58 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M34,64 L42,64 L42,72 L34,72 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M48,64 L56,64 L56,72 L48,72 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M62,64 L70,64 L70,72 L62,72 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M34,78 L42,78 L42,86 L34,86 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M48,78 L70,78 L70,86 L48,86 Z" />
+</vector>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مهندس‌حساب</string>
+    <string name="app_subtitle">ماشین حساب مهندسی</string>
+
+    <!-- Navigation -->
+    <string name="nav_calculator">ماشین حساب</string>
+    <string name="nav_converter">تبدیل واحد</string>
+    <string name="nav_matrix">ماتریس</string>
+    <string name="nav_plotter">نمودار</string>
+    <string name="nav_history">تاریخچه</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <!-- Calculator -->
+    <string name="clear">پاک</string>
+    <string name="delete">حذف</string>
+    <string name="equals">=</string>
+    <string name="degree">درجه</string>
+    <string name="radian">رادیان</string>
+    <string name="gradian">گراد</string>
+    <string name="second_func">۲nd</string>
+
+    <!-- Settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_theme">پوسته</string>
+    <string name="settings_theme_dark">تیره</string>
+    <string name="settings_theme_light">روشن</string>
+    <string name="settings_theme_system">سیستم</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_fa">فارسی</string>
+    <string name="settings_haptic">لرزش هنگام لمس</string>
+    <string name="settings_precision">دقت اعشار</string>
+    <string name="settings_about">درباره برنامه</string>
+    <string name="settings_about_body">مهندس‌حساب — ماشین حساب مهندسی اندروید. متن‌باز، بدون تبلیغات، آفلاین.</string>
+
+    <!-- Errors -->
+    <string name="error_syntax">خطای نحوی</string>
+    <string name="error_math">خطای ریاضی</string>
+    <string name="error_div_zero">تقسیم بر صفر ممکن نیست</string>
+    <string name="error_overflow">سرریز</string>
+
+    <!-- History -->
+    <string name="history_empty">هنوز محاسبه‌ای انجام نشده</string>
+    <string name="history_clear">پاک کردن تاریخچه</string>
+
+    <!-- Converter -->
+    <string name="converter_length">طول</string>
+    <string name="converter_mass">جرم</string>
+    <string name="converter_temp">دما</string>
+    <string name="converter_speed">سرعت</string>
+    <string name="converter_area">مساحت</string>
+    <string name="converter_volume">حجم</string>
+    <string name="converter_energy">انرژی</string>
+    <string name="converter_pressure">فشار</string>
+    <string name="converter_time">زمان</string>
+
+    <!-- Matrix -->
+    <string name="matrix_a">ماتریس الف</string>
+    <string name="matrix_b">ماتریس ب</string>
+    <string name="matrix_result">نتیجه</string>
+    <string name="matrix_add">الف + ب</string>
+    <string name="matrix_sub">الف − ب</string>
+    <string name="matrix_mul">الف × ب</string>
+    <string name="matrix_det">دترمینان الف</string>
+    <string name="matrix_inv">معکوس الف</string>
+    <string name="matrix_trans">ترانهاده الف</string>
+
+    <!-- Plotter -->
+    <string name="plotter_hint">تابع را وارد کنید، مثلاً sin(x) * x</string>
+    <string name="plotter_plot">رسم کن</string>
+</resources>

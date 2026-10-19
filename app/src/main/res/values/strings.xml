@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MohandesCalc</string>
+    <string name="app_subtitle">Engineering Calculator</string>
+
+    <!-- Navigation -->
+    <string name="nav_calculator">Calculator</string>
+    <string name="nav_converter">Converter</string>
+    <string name="nav_matrix">Matrix</string>
+    <string name="nav_plotter">Plotter</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Calculator -->
+    <string name="clear">AC</string>
+    <string name="delete">DEL</string>
+    <string name="equals">=</string>
+    <string name="degree">DEG</string>
+    <string name="radian">RAD</string>
+    <string name="gradian">GRAD</string>
+    <string name="second_func">2nd</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_fa">فارسی</string>
+    <string name="settings_haptic">Haptic feedback</string>
+    <string name="settings_precision">Decimal precision</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_body">MohandesCalc — Engineering calculator for Android. Open-source, ad-free, offline.</string>
+
+    <!-- Errors -->
+    <string name="error_syntax">Syntax error</string>
+    <string name="error_math">Math error</string>
+    <string name="error_div_zero">Cannot divide by zero</string>
+    <string name="error_overflow">Overflow</string>
+
+    <!-- History -->
+    <string name="history_empty">No calculations yet</string>
+    <string name="history_clear">Clear history</string>
+
+    <!-- Converter -->
+    <string name="converter_length">Length</string>
+    <string name="converter_mass">Mass</string>
+    <string name="converter_temp">Temperature</string>
+    <string name="converter_speed">Speed</string>
+    <string name="converter_area">Area</string>
+    <string name="converter_volume">Volume</string>
+    <string name="converter_energy">Energy</string>
+    <string name="converter_pressure">Pressure</string>
+    <string name="converter_time">Time</string>
+
+    <!-- Matrix -->
+    <string name="matrix_a">Matrix A</string>
+    <string name="matrix_b">Matrix B</string>
+    <string name="matrix_result">Result</string>
+    <string name="matrix_add">A + B</string>
+    <string name="matrix_sub">A − B</string>
+    <string name="matrix_mul">A × B</string>
+    <string name="matrix_det">det(A)</string>
+    <string name="matrix_inv">A⁻¹</string>
+    <string name="matrix_trans">Aᵀ</string>
+
+    <!-- Plotter -->
+    <string name="plotter_hint">Enter function, e.g. sin(x) * x</string>
+    <string name="plotter_plot">Plot</string>
+</resources>
