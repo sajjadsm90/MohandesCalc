@@ -289,12 +289,12 @@ class CalculatorEngine(var angleMode: AngleMode = AngleMode.DEG) {
     private fun applyFunction(name: String, stack: ArrayDeque<Double>) {
         when (name) {
             // Single-arg
-            "sin" -> { val a = stack.removeLast(); stack.addLast(trig(sin, a)) }
-            "cos" -> { val a = stack.removeLast(); stack.addLast(trig(cos, a)) }
-            "tan" -> { val a = stack.removeLast(); stack.addLast(trig(tan, a)) }
-            "asin" -> { val a = stack.removeLast(); stack.addLast(invTrig(asin, a)) }
-            "acos" -> { val a = stack.removeLast(); stack.addLast(invTrig(acos, a)) }
-            "atan" -> { val a = stack.removeLast(); stack.addLast(invTrig(atan, a)) }
+            "sin" -> { val a = stack.removeLast(); stack.addLast(trig({ x: Double -> sin(x) }, a)) }
+            "cos" -> { val a = stack.removeLast(); stack.addLast(trig({ x: Double -> cos(x) }, a)) }
+            "tan" -> { val a = stack.removeLast(); stack.addLast(trig({ x: Double -> tan(x) }, a)) }
+            "asin" -> { val a = stack.removeLast(); stack.addLast(invTrig({ x: Double -> asin(x) }, a)) }
+            "acos" -> { val a = stack.removeLast(); stack.addLast(invTrig({ x: Double -> acos(x) }, a)) }
+            "atan" -> { val a = stack.removeLast(); stack.addLast(invTrig({ x: Double -> atan(x) }, a)) }
             "sinh" -> { val a = stack.removeLast(); stack.addLast(sinh(a)) }
             "cosh" -> { val a = stack.removeLast(); stack.addLast(cosh(a)) }
             "tanh" -> { val a = stack.removeLast(); stack.addLast(tanh(a)) }
