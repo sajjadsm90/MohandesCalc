@@ -19,16 +19,24 @@ android {
         vectorDrawables { useSupportLibrary = true }
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../mohandescalc.keystore")
+            storePassword = "MohandesCalc2026"
+            keyAlias = "mohandescalc"
+            keyPassword = "MohandesCalc2026"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
             isShrinkResources = true
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // NOTE: For publishing on Bazaar, generate a keystore and configure signingConfig here.
-            // See README.md -> "انتشار در بازار" section for full instructions.
         }
         debug {
             isMinifyEnabled = false
