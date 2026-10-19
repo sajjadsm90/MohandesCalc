@@ -29,5 +29,30 @@ signing.properties
 Thumbs.db
 .DS_Store
 
-# K8s/build cache
+# Kotlin/build cache
 .kotlin/
+
+# Android SDK — should never be inside the project tree
+/android-sdk/
+/android-sdk
+**/android-sdk/
+sdk.dir
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# IDE project files
+*.swp
+*~
+.idea/
+*.iml
+.vscode/
+
+# Misc
+.claude/
+.agent-ctx/
+
