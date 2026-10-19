@@ -354,14 +354,14 @@ class CalculatorEngine(var angleMode: AngleMode = AngleMode.DEG) {
 
     /** Wrap a trig function so the argument is interpreted according to the angle mode. */
     private fun trig(fn: (Double) -> Double, x: Double): Double = when (angleMode) {
-        AngleMode.DEG -> fn(toRadians(x))
+        AngleMode.DEG -> fn(Math.toRadians(x))
         AngleMode.RAD -> fn(x)
         AngleMode.GRAD -> fn(x * PI / 200.0)
     }
 
     /** Wrap an inverse trig function so the result is given in the current angle mode. */
     private fun invTrig(fn: (Double) -> Double, x: Double): Double = when (angleMode) {
-        AngleMode.DEG -> toDegrees(fn(x))
+        AngleMode.DEG -> Math.toDegrees(fn(x))
         AngleMode.RAD -> fn(x)
         AngleMode.GRAD -> fn(x) * 200.0 / PI
     }
@@ -392,11 +392,11 @@ class CalculatorEngine(var angleMode: AngleMode = AngleMode.DEG) {
         var zz = z - 1.0
         for (i in 1 until c.size) x += c[i] / (zz + i)
         val t = zz + g + 0.5
-        return sqrt(2 * PI) * pow(t, zz + 0.5) * exp(-t) * x
+        return sqrt(2 * PI) * kotlin.math.pow(t, zz + 0.5) * exp(-t) * x
     }
 
-    private fun gcd(a: Long, b: Long): Long = if (b == 0L) abs(a) else gcd(b, a % b)
-    private fun lcm(a: Long, b: Long): Long = if (a == 0L || b == 0L) 0 else abs(a * b) / gcd(a, b)
+    private fun gcd(a: Long, b: Long): Long = if (b == 0L) kotlin.math.abs(a) else gcd(b, a % b)
+    private fun lcm(a: Long, b: Long): Long = if (a == 0L || b == 0L) 0 else kotlin.math.abs(a * b) / gcd(a, b)
 
     /** Format the result for display: integers without decimals, others with up to 10 significant digits. */
     fun formatResult(value: Double): String {

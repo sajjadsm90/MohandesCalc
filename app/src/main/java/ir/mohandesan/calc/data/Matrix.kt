@@ -1,5 +1,7 @@
 package ir.mohandesan.calc.data
 
+import kotlin.math.abs
+
 /**
  * Matrix operations: addition, subtraction, multiplication, determinant,
  * inverse, transpose, and solving linear systems via Gaussian elimination.
